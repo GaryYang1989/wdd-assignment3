@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gary's Gym</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+        [class*="col"]{
+            padding: 2px;
+            background-color: white;
+            border: 2px solid aqua;
+            color: rgb(28, 4, 240);
+            text-align: center;
+        }
+        img{
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        [class*="con"]{
+            padding: 1rem;
+            background-color: rgb(13, 125, 190);
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .container a:hover{
+            color: brown;
+        }
+        </style>
+    </head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Gary's Gym</h1>
+        <h3 style="color:brown; text-align:center;">Membership Options</h2>
+    </div>
+    <br>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4">
+            <a href="FormGold.html" style="text-decoration:none; font-weight:bold; font: size 20px;">Gold Membership</a>
+            <a href="FormGold.html"> 
+                <img src="Gold.png" title="Gold Membership" class="img-thumbnail" alt="Gold Membership">
+            </a>
+            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#learn" data-mbd-ripple-color="dark">Learn More</button><br>
+            <div id="learn" class="collapse">
+                In the Gold Membership you get this many perks, perks here, perks there, so many perks.
+            </div>
+            <a href="FormGold.html">Signup for Gold Membership</a>
+        </div>
+        <div class="col-sm-4">
+            <a href="FormSilver.html" style="text-decoration:none; font-weight:bold; font: size 20px;">Silver Membership</a>
+            <a href="FormSilver.html"> 
+                <img src="Silver.png" title="Silver Membership" class="img-thumbnail" alt="Silver Membership">
+            </a>
+            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#learn2" data-mbd-ripple-color="dark">Learn More</button><br>
+            <div id="learn2" class="collapse">
+                In the Silver Membership you get this many perks, some perks here, some perks there, not as many perks.
+            </div>
+            <a href="FormSilver.html">Signup for Silver Membership</a>
+        </div>
+        <div class="col-sm-4">
+            <a href="FormBronze.html" style="text-decoration:none; font-weight:bold; font: size 20px;">Bronze Membership</a>
+            <a href="FormBronze.html"> 
+                <img src="Bronze.png" title="Bronze Membership" class="img-thumbnail" alt="Bronze Membership">
+            </a>
+            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" data-bs-target="#learn3" data-mbd-ripple-color="dark">Learn More</button><br>
+            <div id="learn3" class="collapse">
+                In the Bronze Membership you get this many perks, not many perks here, not many perks there, not so many perks.
+            </div>
+            <a href="FormBronze.html">Signup for Bronze Membership</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gold Membership</title>
+        <style>
+            body{
+                margin: 1;
+                background-color: gold;
+            }
+            .navbar{
+                overflow: hidden;
+                background-color: white;
+                border-style: double;
+            }
+            .navbar a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 5px 20px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .navbar a:hover{
+                background-color: blue;
+                color: aliceblue;
+            }
+            .navbar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            h1{
+                text-align: center;
+                color: goldenrod;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+            }
+            input[type=text], input[type=email], textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            .container{
+                margin: auto;
+                width: 40%;
+                border-radius: 10px;
+                background-color: goldenrod;
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="BootStrap.html">Home</a>
+            <a class="active">Gold Membership</a>
+            <a href="FormSilver.html">Silver Membership</a>
+            <a href="FormBronze.html">Bronze Membership</a>
+            <a href="ViewMembership.html">View Membership</a>
+        </div>
+        <h1>Gold Membership</h1>
+        <hr>
+        <div class="container">
+            <form action="gold.php">
+                <label for="name">Your Name: </label>
+                <input type="text" id="name" name="name" placeholder="Mr. Wonderful">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="mrwonderful@gmail.com">
+
+                <label for="subject">Address: </label>
+                <textarea id="subject" name="subject" placeholder="1234 Your Street"></textarea>
+
+                <button type="button" class="btn btn-primary">Submit Information</button>
+            </form>
+        </div>
+    </body>
+</html>
