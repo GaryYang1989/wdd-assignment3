@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Gym Membership</title>
+    <style>
+      body{
+        margin: 1;
+        background-color: rgba(182, 126, 5, 0.699);
+      }
+      .container{
+        margin: auto;
+        width: 40%;
+        border-radius: 10px;
+        background-color: rgb(182, 92, 8);
+        padding: 20px;
+      }
+      input[type=text], input[type=email], textarea{
+        width: 100%;
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      h1{
+        text-align: center;
+        color: rgb(163, 84, 10);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
+      h2{
+        color: rgb(117, 68, 21);
+      }
+      p{
+        color: rgb(117, 68, 21);
+      }
+      div{
+        color: rgb(117, 68, 21);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Your Gym Membership</h1>
+
+    <div class="container">
+      <form action="/quotes" method="POST">
+          <label for="name">Please just type "Mr.Hello" for the name: </label>
+          <input type="text" id="name" name="name" placeholder="Mr.Hello" required>
+          <label for="text">Please just write "Some membership for the membership": </label>
+          <input type="text" id="text" name="quote" placeholder="Some membership" required>
+          <button type="submit" class="btn btn-primary">Submit Information</button>
+      </form>
+    </div>
+
+    <h2>This is Your Membership :</h2>
+
+    <ul class="quotes">
+    <% for(var i = 0; i < quotes.length; i++) {%>
+        <li class="quote">
+        <span><p>Name: </p><%= quotes[i].name %></span>:
+        <span><p>Membership type:</p><%= quotes[i].quote %></span>
+        </li>
+    <% } %>
+    </ul>
+
+    <div>
+        <h2>Upgrade your Membership</h2>
+        <p>
+          Upgrade your Membership
+        </p>
+        <button id="update-button">Upgrade your Membership</button>
+    </div>
+
+    <div>
+        <h2>Delete your Membership</h2>
+        <p>
+          Delete your Membership. Does nothing if there are no Memberships
+        </p>
+        <button id="delete-button">Delete your Membership</button>
+    </div>
+    
+    <div id="message"></div>
+    <script src="/main.js"></script>
+  </body>
+
+</html>
